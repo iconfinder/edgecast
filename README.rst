@@ -28,6 +28,13 @@ After the module has been installed, you need to add ``django_edgecast`` to your
         'django_edgecast',
     )
 
+You also need to add your account number, which can be found in the upper right corner of your control panel, and your token, which can be found under your account settings, to your application configuration:
+
+.. code-block:: python
+
+    EDGECAST_ACCOUNT_NUMBER = '..'
+    EDGECAST_TOKEN = '..'
+
 The Edgecast client can now be easily accessed from the entire application:
 
 .. code-block:: python
