@@ -51,7 +51,7 @@ Testing requires a set of valid credentials. All tests are performed against URL
 
 ``EDGECAST_CDN_DOMAIN``
     CDN domain to use for tests.
-``EDEDGECAST_ACCOUNT_NUMBER``
+``EDGECAST_ACCOUNT_NUMBER``
     Account number (visible in the upper right corner of your control panel.)
 ``EDGECAST_TOKEN``
     Token (available under your account settings in your control panel.)
