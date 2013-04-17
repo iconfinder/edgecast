@@ -24,8 +24,8 @@ tests_require = [
 
 setup(
     name='edgecast',
-    version='1.0.0',
-    description='VAT validation for Python',
+    version='1.0.1',
+    description='Convenient EdgeCast CDN management for Python',
     author='Nick Bruun',
     author_email='nick@bruun.co',
     url='http://bruun.co/',
