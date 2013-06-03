@@ -24,7 +24,7 @@ tests_require = [
 
 setup(
     name='edgecast',
-    version='1.0.1',
+    version='1.0.2',
     description='Convenient EdgeCast CDN management for Python',
     author='Nick Bruun',
     author_email='nick@bruun.co',
