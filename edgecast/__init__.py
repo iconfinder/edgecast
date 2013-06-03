@@ -62,7 +62,13 @@ class Client(object):
             data=json.dumps(data)
         )
 
-        response.raise_for_status()
+        try:
+            response.raise_for_status()
+        except:
+            raise Exception('unexpected response code %d: %s' % (
+                    response.status_code,
+                    response.text
+                ))
 
     def purge(self, media_type, *patterns):
         """Purge one or more resources from the CDN.
