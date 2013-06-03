@@ -19,6 +19,13 @@ MEDIA_TYPE_APPLICATION_DELIVERY_NETWORK = 14
 """
 
 
+class EdgeCastError(Exception):
+    """EdgeCast communications error.
+    """
+
+    pass
+
+
 class Client(object):
     """EdgeCast CDN client.
     """
@@ -65,7 +72,7 @@ class Client(object):
         try:
             response.raise_for_status()
         except:
-            raise Exception('unexpected response code %d: %s' % (
+            raise EdgeCastError('unexpected response code %d: %s' % (
                     response.status_code,
                     response.text
                 ))
@@ -101,4 +108,5 @@ __all__ = (
     'MEDIA_TYPE_HTTP_SMALL_OBJECT',
     'MEDIA_TYPE_APPLICATION_DELIVERY_NETWORK',
     'Client',
+    'EdgeCastError',
 )
